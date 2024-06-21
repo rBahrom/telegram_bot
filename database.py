@@ -1,5 +1,4 @@
 # db.py module
-
 import psycopg2 as psql
 
 class Database:
@@ -27,6 +26,7 @@ class Database:
         query = f"SELECT * FROM bot WHERE user_id = {user_id}"
         check_user = await Database.connect(query, query_type="select")
         if len(check_user) == 1:
-            print(">>>>>>>>>>>>>>>>>>>>", check_user)
+            print("> > > > > > ", check_user)
             return True
         return False
+
