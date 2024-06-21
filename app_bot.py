@@ -29,46 +29,46 @@ async def send_welcome(message: types.Message):
 
 
 @dp.message_handler(lambda message: message.text == "Menyu 💻")
-async def show_menu(message: types.Message):
+async def show_menu_1(message: types.Message):
     # action = button_callback_menu.new(action=message.text)
     await message.answer(" 💻 Menyulardan birini tanglang 💻 ", reply_markup=menu_leptop)
 
-@dp.message_handler(lambda message: message.text == "MacBook M2 Pro 💻")
-async def show_menu(message: types.Message):
+@dp.message_handler(lambda message: message.text == "MacBook Leptop 💻")
+async def show_menu_2(message: types.Message):
     # action = button_callback_menu.new(action=message.text)
     await message.answer(" MacBook kampyutirlari 💻 ", reply_markup=macbook)
 
-@dp.message_handler(lambda message: message.text == "MacBook 💻")
-async def show_menu(message: types.Message):
+@dp.message_handler(lambda message: message.text == "MacBook  💻")
+async def show_menu_3(message: types.Message):
     # action = button_callback_menu.new(action=message.text)
     await message.answer(" MacBook information 💻 ", reply_markup=keyboard)
 
 
 @dp.message_handler(lambda message: message.text == "Back 🔙")
-async def show_menu(message: types.Message):
+async def show_menu_4(message: types.Message):
     # action = button_callback_menu.new(action=message.text)
     await message.answer(" Back ", reply_markup=menu_keyboard)
 
 @dp.message_handler(lambda message: message.text == "Menyu 📱")
-async def show_menu(message: types.Message):
+async def show_menu_5(message: types.Message):
     # action = button_callback_menu.new(action=message.text)
     await message.answer(" 📱 Menyulardan birini tanglang 📱 ", reply_markup=menu_phone)
 
 
 @dp.message_handler(lambda message: message.text == "Samsung 📱")
-async def show_menu(message: types.Message):
+async def show_menu_6(message: types.Message):
     # action = button_callback_menu.new(action=message.text)
     await message.answer("  SAMSUNG telefonlarining ruyhati Samsung 📱", reply_markup=samsung)
 
 
 @dp.message_handler(lambda message: message.text == "Iphone 📱")
-async def show_menu(message: types.Message):
+async def show_menu_7(message: types.Message):
     # action = button_callback_menu.new(action=message.text)
     await message.answer(" Apple Iphone telefonlarining ruyhati 📱", reply_markup=iphone)
 
 
 @dp.message_handler()
-async def echo(message: types.Message):
+async def echo_8(message: types.Message):
     # old style:
     # await bot.send_message(message.chat.id, message.text)
 

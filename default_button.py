@@ -7,7 +7,7 @@ menu_keyboard = ReplyKeyboardMarkup([
 
 
 menu_leptop = ReplyKeyboardMarkup([
-    [KeyboardButton("MacBook M2 Pro 💻"), KeyboardButton("Hp 💻")],
+    [KeyboardButton("MacBook Leptop 💻"), KeyboardButton("Hp 💻")],
     [KeyboardButton("Acer 💻"), KeyboardButton("Lenovo 💻")],
     [KeyboardButton("Asus 💻"), KeyboardButton(" AIO 💻")],
     [KeyboardButton("Back 🔙")]
@@ -15,7 +15,7 @@ menu_leptop = ReplyKeyboardMarkup([
     resize_keyboard=True)
 
 macbook = ReplyKeyboardMarkup([
-    [KeyboardButton("MacBook  💻"), KeyboardButton("MacBook Pro 💻")],
+    [KeyboardButton("MacBook 💻"), KeyboardButton("MacBook Pro 💻")],
     [KeyboardButton("MacBook M1 💻"), KeyboardButton("MacBook M1 Pro 💻")],
     [KeyboardButton("MacBook M2 💻"), KeyboardButton(" MacBook M2 Pro 💻")],
     [KeyboardButton("Buy")],
