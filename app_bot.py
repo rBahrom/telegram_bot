@@ -5,7 +5,7 @@ from aiogram import Bot, Dispatcher, executor, types
 from default_button import *
 from inline_button import keyboard
 
-API_TOKEN = "5843003643:AAFDq-UhdnQluIuMwGm2EaMSljEbwqe0wwM"
+API_TOKEN = "5843003643:AAGHQTQJZ4A_WgV0zPdAMXrgnwA5net7CVU"
 
 # Configure logging
 logging.basicConfig(level=logging.INFO)
