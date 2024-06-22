@@ -20,11 +20,11 @@ async def send_welcome(message: types.Message):
     full_name = message.from_user.full_name
     user_id = message.from_user.id
     username = message.from_user.username
-    query = f"INSERT INTO bot(username, full_name, user_id) VALUES('{username}', '{full_name}', {user_id})"
+    # query = f"INSERT INTO bot(username, full_name, user_id) VALUES('{username}', '{full_name}', {user_id})"
     if await Database.check_user_id(user_id):
         await message.reply(f"Botga hush kelibsiz : {first_name}", reply_markup=menu_keyboard)
     else:
-        await Database.connect(query, "insert")
+        # await Database.connect(query, "insert")
         await message.reply(f"Assalomu alaykum :  {full_name}", reply_markup=menu_keyboard)
 
 
@@ -38,7 +38,7 @@ async def show_menu_2(message: types.Message):
     # action = button_callback_menu.new(action=message.text)
     await message.answer(" MacBook kampyutirlari 💻 ", reply_markup=macbook)
 
-@dp.message_handler(lambda message: message.text == "MacBook  💻")
+@dp.message_handler(lambda message: message.text == "MacBook 💻")
 async def show_menu_3(message: types.Message):
     # action = button_callback_menu.new(action=message.text)
     await message.answer(" MacBook information 💻 ", reply_markup=keyboard)
